@@ -1,6 +1,6 @@
 import java.util.*;
-import java.lang.*;
-import java.io.*;
+// import java.lang.*;
+// import java.io.*;
 
 class Beat_the_Average
 {

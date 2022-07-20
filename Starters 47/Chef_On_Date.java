@@ -1,6 +1,8 @@
 import java.util.*;
+import java.lang.*;
+import java.io.*;
 
-class Janmansh_and_Assignments
+class Chef_On_Date
 {
     public static void main (String[] args) throws Exception
     {
@@ -10,18 +12,19 @@ class Janmansh_and_Assignments
             int t=sc.nextInt();
             while(t-->0)
             {
-                int n=sc.nextInt();
-                if((n+3)<=10)
+                int x=sc.nextInt();
+                int y=sc.nextInt();
+                if(x>=y)
                 {
-                    System.out.println("Yes"); 
+                    System.out.println("YES");
+                    
                 }
                 else
                 {
-                    System.out.println("No");
-                    
+                    System.out.println("NO");
                 }
+                
             }
-            sc.close();
         }
         catch(Exception e) {}
     }

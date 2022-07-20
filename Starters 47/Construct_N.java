@@ -1,6 +1,8 @@
 import java.util.*;
+import java.lang.*;
+import java.io.*;
 
-class Janmansh_and_Assignments
+class Construct_N
 {
     public static void main (String[] args) throws Exception
     {
@@ -11,17 +13,16 @@ class Janmansh_and_Assignments
             while(t-->0)
             {
                 int n=sc.nextInt();
-                if((n+3)<=10)
+                if(n==1 || n==3 || n==5)
                 {
-                    System.out.println("Yes"); 
+                    System.out.println("NO");
+                    
                 }
                 else
                 {
-                    System.out.println("No");
-                    
+                    System.out.println("YES");
                 }
             }
-            sc.close();
         }
         catch(Exception e) {}
     }

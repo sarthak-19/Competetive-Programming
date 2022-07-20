@@ -1,27 +1,30 @@
 import java.util.*;
+import java.lang.*;
+import java.io.*;
 
-class Janmansh_and_Assignments
+class Passes_for_Fair
 {
     public static void main (String[] args) throws Exception
     {
         try
         {
-            Scanner sc=new Scanner(System.in);
+            Scanner sc = new Scanner(System.in);
             int t=sc.nextInt();
             while(t-->0)
             {
                 int n=sc.nextInt();
-                if((n+3)<=10)
+                int k=sc.nextInt();
+
+                if(n<k)
                 {
-                    System.out.println("Yes"); 
+                    System.out.println("YES");
+                    
                 }
                 else
                 {
-                    System.out.println("No");
-                    
+                    System.out.println("NO");
                 }
             }
-            sc.close();
         }
         catch(Exception e) {}
     }

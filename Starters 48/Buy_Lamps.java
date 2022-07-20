@@ -1,6 +1,8 @@
 import java.util.*;
+import java.lang.*;
+import java.io.*;
 
-class Janmansh_and_Assignments
+class Buy_Lamps
 {
     public static void main (String[] args) throws Exception
     {
@@ -11,17 +13,16 @@ class Janmansh_and_Assignments
             while(t-->0)
             {
                 int n=sc.nextInt();
-                if((n+3)<=10)
-                {
-                    System.out.println("Yes"); 
-                }
-                else
-                {
-                    System.out.println("No");
-                    
-                }
+                int k=sc.nextInt();
+                int x=sc.nextInt();
+                int y=sc.nextInt();
+
+                int cr=k*x;
+                n=n-k;
+                int ans=cr+ (Math.min(x,y)*n);
+                System.out.println(ans);
+                
             }
-            sc.close();
         }
         catch(Exception e) {}
     }

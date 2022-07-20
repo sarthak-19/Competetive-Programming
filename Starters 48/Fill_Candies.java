@@ -1,6 +1,8 @@
 import java.util.*;
+import java.lang.*;
+import java.io.*;
 
-class Janmansh_and_Assignments
+class Fill_Candies
 {
     public static void main (String[] args) throws Exception
     {
@@ -11,17 +13,12 @@ class Janmansh_and_Assignments
             while(t-->0)
             {
                 int n=sc.nextInt();
-                if((n+3)<=10)
-                {
-                    System.out.println("Yes"); 
-                }
-                else
-                {
-                    System.out.println("No");
-                    
-                }
+                int k=sc.nextInt();
+                int m=sc.nextInt();
+
+                System.out.println((int)Math.ceil((double)n/(double)(m*k)));
+                
             }
-            sc.close();
         }
         catch(Exception e) {}
     }
